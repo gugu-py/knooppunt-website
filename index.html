@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Knooppunt • Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- ░░░  NAVBAR (unchanged)  ░░░ -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/img/logo.png" alt="Knooppunt logo" class="h-10 w-auto"/>
+      </a>
+      <nav class="hidden gap-6 text-sm font-medium lg:flex">
+        <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+        <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+        <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+        <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+        <a class="hover:text-blue-600" href="#contact">Contact</a>
+        <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7PE">Get&nbsp;Involved</a>
+      </nav>
+
+      <!-- Mobile button -->
+      <button id="mobile-toggle" class="inline-flex items-center lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu"
+         class="hidden flex-col gap-4 bg-white px-4 pb-4 pt-2 text-sm font-medium shadow lg:hidden">
+      <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+      <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+      <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+      <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+      <a class="hover:text-blue-600" href="#contact">Contact</a>
+      <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7PE">Get&nbsp;Involved</a>
+    </nav>
+  </header>
+
+  <!-- Spacer for fixed header -->
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ░░░  1. INTRO VIDEO  ░░░ -->
+  <section class="relative w-full h-[65vh] lg:h-[75vh]">
+      <!-- Placeholder YouTube iframe -->
+      <iframe class="w-full h-full"
+              src="https://www.youtube.com/embed/pfIYHzwCkMU?rel=0&controls=1"
+              title="Knooppunt intro video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+  </section>
+
+  <!-- ░░░  2. MISSION STATEMENT  ░░░ -->
+  <section class="bg-gray-50">
+    <div class="mx-auto max-w-4xl px-4 py-16 text-center lg:px-8">
+      <h2 class="mb-6 text-3xl font-extrabold text-[#143a67]">
+        Our&nbsp;Mission
+      </h2>
+      <p class="mx-auto text-lg leading-relaxed">
+        <strong>Knooppunt Community Center</strong> is a UWC&nbsp;Maastricht initiative
+        dedicated to fostering community connections, cultural exchange, and meaningful
+        dialogue. Our center is a hub where people from all walks of life come together,
+        share experiences, and learn from one another through our diverse programs and activities.
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░░  3. EVENTS WE HOST  ░░░ -->
+  <section class="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+    <h2 class="mb-10 text-center text-3xl font-extrabold text-[#143a67]">
+      Events&nbsp;We&nbsp;Host
+    </h2>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- Living Library -->
+      <div class="rounded-lg bg-white p-6 shadow hover:shadow-md transition">
+        <h3 class="mb-3 text-xl font-semibold text-blue-600">
+          Living&nbsp;Library
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Engage in conversations with “living books”—community members who share
+          their personal stories to break down stereotypes and foster understanding.
+        </p>
+        <a href="living-library.html"
+           class="inline-block rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+          Learn&nbsp;More
+        </a>
+      </div>
+
+      <!-- UWC Experience Day -->
+      <div class="rounded-lg bg-white p-6 shadow hover:shadow-md transition">
+        <h3 class="mb-3 text-xl font-semibold text-blue-600">
+          UWC&nbsp;Experience&nbsp;Day
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Spend a day on the UWC Maastricht campus, join student-led workshops,
+          and experience intercultural education in action.
+        </p>
+        <a href="#"
+           class="inline-block rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+          Learn&nbsp;More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░  4. UPCOMING EVENT  ░░░ -->
+  <section class="bg-gradient-to-r from-[#4e6fa6] to-[#496d9c] py-16 text-white">
+    <div class="mx-auto max-w-3xl px-4 text-center lg:px-8">
+      <p class="mb-3 text-sm uppercase tracking-wide text-blue-100">
+        Next&nbsp;Up
+      </p>
+      <h2 class="mb-4 text-3xl font-extrabold">
+        Wednesday&nbsp;&bull;&nbsp;28&nbsp;May&nbsp;2025
+      </h2>
+      <p class="mb-8 text-lg">
+        09:30 – 16:30&nbsp;h &nbsp;•&nbsp; Knooppunt Community Center
+      </p>
+      <a href="https://forms.office.com/e/bDDt17n7PE"
+         class="inline-block rounded bg-white/90 px-6 py-3 text-blue-700 font-semibold hover:bg-white">
+        Register&nbsp;or&nbsp;Volunteer
+      </a>
+    </div>
+  </section>
+
+  <!-- ░░░  FOOTER  ░░░ -->
+  <footer id="contact" class="bg-gray-100 py-10">
+    <div class="mx-auto max-w-7xl space-y-6 px-4 text-center text-sm lg:px-8">
+      <p class="font-semibold">Contact&nbsp;Us</p>
+      <p>Email:
+        <a href="mailto:knooppunt@uwcmaastricht.nl"
+           class="text-blue-600 hover:underline">knooppunt@uwcmaastricht.nl</a>
+      </p>
+      <p class="text-gray-600">&copy; 2025&nbsp;Knooppunt Community Center</p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('mobile-toggle')
+      .addEventListener('click', () =>
+        document.getElementById('mobile-menu').classList.toggle('hidden'));
+  </script>
+</body>
+</html>

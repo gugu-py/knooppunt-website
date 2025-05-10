@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Knooppunt • Living Library</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- ░░░  NAVBAR (unchanged)  ░░░ -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/img/logo.png" alt="Knooppunt logo" class="h-10 w-auto"/>
+      </a>
+      <nav class="hidden gap-6 text-sm font-medium lg:flex">
+        <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+        <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+        <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+        <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+        <a class="hover:text-blue-600" href="#contact">Contact</a>
+        <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7PE">Get&nbsp;Involved</a>
+      </nav>
+
+      <!-- Mobile button -->
+      <button id="mobile-toggle" class="inline-flex items-center lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu"
+         class="hidden flex-col gap-4 bg-white px-4 pb-4 pt-2 text-sm font-medium shadow lg:hidden">
+      <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+      <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+      <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+      <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+      <a class="hover:text-blue-600" href="#contact">Contact</a>
+      <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7P">Get&nbsp;Involved</a>
+    </nav>
+  </header>
+
+
+
+
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ░░░  HERO WITH BACKDROP IMAGE  ░░░ -->
+  <section class="relative isolate flex min-h-[300px] items-center justify-center overflow-hidden">
+    <!-- 📷  HERO PLACEHOLDER  -->
+    <img
+      src="assets/img/hero-living-library-placeholder.jpg"
+      alt="People conversing at a Living Library"
+      class="absolute inset-0 h-full w-full object-cover opacity-50" />
+
+    <!-- Gradient overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#3f6cac]/90 to-[#3a658f]/90"></div>
+
+    <!-- Heading content -->
+    <div class="relative z-10 mx-auto max-w-2xl px-4 text-center text-white">
+      <h1 class="mb-4 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
+        Living&nbsp;Library
+      </h1>
+      <p class="mx-auto max-w-lg text-base sm:text-lg">
+        Conversations that turn pages of prejudice into chapters of empathy.
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░░  WHAT IS A LIVING LIBRARY?  ░░░ -->
+  <section class="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+    <h2 class="mb-6 text-2xl font-bold text-[#143a67]">
+      What&nbsp;is&nbsp;a&nbsp;Living&nbsp;Library?
+    </h2>
+
+    <!-- Two-column layout with placeholder image -->
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+      <!-- Text column -->
+      <div class="space-y-6 leading-relaxed">
+        <p>
+          A <strong>Living Library</strong> (also called a <em>Human Library</em>) is an
+          event where <em>people</em>, not books, can be “borrowed” for an open conversation…
+        </p>
+
+        <ul class="list-disc space-y-2 pl-6">
+          <li><span class="font-semibold">Purpose:</span> to foster dialogue, empathy, and understanding …</li>
+          <li><span class="font-semibold">How it works:</span> Visitors (“readers”) choose a human book …</li>
+          <li><span class="font-semibold">Goal:</span> to challenge stereotypes by creating a safe space …</li>
+        </ul>
+      </div>
+
+      <!-- 📷  SECTION PLACEHOLDER  -->
+      <div>
+        <img
+          src="assets/img/conversation-placeholder.jpg"
+          alt="A human book sharing their story"
+          class="h-full w-full rounded-lg object-cover shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░  TESTIMONIALS  ░░░ -->
+  <section class="bg-gray-50 py-16">
+    <div class="mx-auto max-w-7xl px-4 lg:px-8">
+      <h2 class="mb-10 text-center text-2xl font-bold text-[#143a67]">
+        Voices from January&nbsp;2025
+      </h2>
+
+      <div class="grid gap-8 lg:grid-cols-3">
+        <!-- Single quote card pattern -->
+        <figure class="flex flex-col items-center rounded-lg bg-white p-6 shadow-md">
+          <blockquote class="italic text-gray-700 text-center">
+            “The most eye-opening discussion that I have ever had.”
+          </blockquote>
+        </figure>
+
+        <figure class="flex flex-col items-center rounded-lg bg-white p-6 shadow-md">
+          <blockquote class="italic text-gray-700 text-center">
+            “Totally engaging… real… emotional and a wonderful learning experience.”
+          </blockquote>
+        </figure>
+
+        <figure class="flex flex-col items-center rounded-lg bg-white p-6 shadow-md">
+          <blockquote class="italic text-gray-700 text-center">
+            “Beautiful, moving, genuine… no words.”
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="bg-gray-100 py-10">
+    <div class="mx-auto max-w-7xl space-y-6 px-4 text-center text-sm lg:px-8">
+      <p class="font-semibold">Contact&nbsp;Us</p>
+      <p>Email:
+        <a href="mailto:knooppunt@uwcmaastricht.nl"
+           class="text-blue-600 hover:underline">knooppunt@uwcmaastricht.nl</a>
+      </p>
+      <p class="text-gray-600">&copy; 2025&nbsp;Knooppunt Community Center</p>
+    </div>
+  </footer>
+    <!-- ░░░  MOBILE TOGGLE JS  ░░░ -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('mobile-toggle')
+      .addEventListener('click', () =>
+        document.getElementById('mobile-menu').classList.toggle('hidden'));
+  </script>
+</body>
+</html>

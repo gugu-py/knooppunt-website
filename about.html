@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional custom overrides -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Knooppunt • About Us</title>
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- ░░░  NAVBAR (unchanged)  ░░░ -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/img/logo.png" alt="Knooppunt logo" class="h-10 w-auto"/>
+      </a>
+      <nav class="hidden gap-6 text-sm font-medium lg:flex">
+        <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+        <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+        <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+        <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+        <a class="hover:text-blue-600" href="#contact">Contact</a>
+        <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7PE">Get&nbsp;Involved</a>
+      </nav>
+
+      <!-- Mobile button -->
+      <button id="mobile-toggle" class="inline-flex items-center lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu"
+         class="hidden flex-col gap-4 bg-white px-4 pb-4 pt-2 text-sm font-medium shadow lg:hidden">
+      <a class="text-blue-600 hover:underline" href="index.html">Home</a>
+      <a class="hover:text-blue-600" href="about.html">About&nbsp;Us</a>
+      <a class="hover:text-blue-600" href="living-library.html">Living&nbsp;Library</a>
+      <a class="hover:text-blue-600" href="uwc_day_exp.html">UWC&nbsp;Experience&nbsp;Day</a>
+      <a class="hover:text-blue-600" href="#contact">Contact</a>
+      <a class="text-blue-600 hover:underline" href="https://forms.office.com/e/bDDt17n7PE">Get&nbsp;Involved</a>
+    </nav>
+  </header>
+
+
+    <!-- Spacer so fixed header doesn’t overlap content -->
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ░░░  HERO  ░░░ -->
+  <section
+    class="flex min-h-[320px] items-center justify-center bg-gradient-to-b from-[#4e6fa6] to-[#496d9c] px-4 text-center text-white">
+    <div class="mx-auto max-w-3xl space-y-4">
+      <h1 class="text-3xl font-extrabold sm:text-4xl lg:text-5xl">
+        About&nbsp;Knooppunt
+      </h1>
+      <p class="mx-auto max-w-xl text-base sm:text-lg">
+        Building bridges in our community through connection, dialogue,<br class="hidden sm:inline">
+        and shared experiences.
+      </p>
+    </div>
+  </section>
+<!-- ░░░  OUR STORY  ░░░ -->
+  <section class="mx-auto max-w-7xl space-y-12 px-4 py-16 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <h2 class="mb-4 text-2xl font-bold text-[#143a67]">
+          Our Story
+        </h2>
+        <span class="block h-1 w-16 bg-amber-500 mb-6"></span>
+
+        <p class="mb-4 leading-relaxed">
+          Knooppunt Community Center was founded in 2020 as an initiative of
+          UWC&nbsp;Maastricht to create a space for meaningful community engagement.
+        </p>
+        <p class="leading-relaxed">
+          The name “Knooppunt” comes from the Dutch word for “junction” or “node,”
+          representing our role as a meeting point where different paths, people,
+          and ideas come together. Our center serves as a hub for intercultural
+          dialogue, learning, and collaboration.
+        </p>
+      </div>
+
+      <!-- Hero / illustrative image -->
+      <div>
+        <img src="assets/img/engage-community.jpg"
+             alt="Community members engaging"
+             class="h-full w-full rounded-lg object-cover shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ░░░  MEET OUR TEAM  ░░░ -->
+  <section class="mx-auto max-w-7xl px-4 py-20 lg:px-8">
+    <h2 class="mb-8 text-2xl font-bold text-[#143a67] text-center">Meet Our Team</h2>
+
+    <!-- Group photo placeholder -->
+    <figure class="mx-auto mb-16 max-w-3xl overflow-hidden rounded-lg shadow-lg">
+      <img src="assets/img/team-2025-2026.jpg"
+           alt="Knooppunt Team 2025-2026 group photo"
+           class="w-full object-cover" />
+      <figcaption class="bg-gray-800 py-2 text-center text-sm text-white">
+        Knooppunt Team 2025-2026
+      </figcaption>
+    </figure>
+
+    <!-- Individual cards -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <!-- Repeat this card for each member (photos optional / placeholder) -->
+      <!-- Karolien -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-karolien.jpg" alt="Karolien"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Karolien</p>
+        </div>
+      </div>
+
+      <!-- Viktoriia -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-viktoriia.jpg" alt="Viktoriia"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Viktoriia</p>
+        </div>
+      </div>
+
+      <!-- Sheila -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-sheila.jpg" alt="Sheila"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Sheila</p>
+        </div>
+      </div>
+
+      <!-- Beste -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-beste.jpg" alt="Beste"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Beste</p>
+        </div>
+      </div>
+
+      <!-- Sahar -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-sahar.jpg" alt="Sahar"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Sahar</p>
+        </div>
+      </div>
+
+      <!-- Regina -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-regina.jpg" alt="Regina"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Regina</p>
+        </div>
+      </div>
+
+      <!-- Gabi -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-gabi.jpg" alt="Gabi"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Gabi</p>
+        </div>
+      </div>
+
+      <!-- Alima -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-alima.jpg" alt="Alima"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Alima</p>
+        </div>
+      </div>
+
+      <!-- Eric -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow">
+        <img src="assets/img/team-eric.jpg" alt="Eric"
+             class="h-72 w-full object-cover" />
+        <div class="bg-white p-4 text-center">
+          <p class="font-semibold text-[#143a67]">Eric</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░  CONTACT (FOOTER)  ░░░ -->
+  <footer id="contact" class="bg-gray-100 py-10">
+    <div class="mx-auto max-w-7xl space-y-6 px-4 text-center text-sm lg:px-8">
+      <p class="font-semibold">Contact&nbsp;Us</p>
+      <p>Email:
+        <a href="mailto:knooppunt@uwcmaastricht.nl"
+           class="text-blue-600 hover:underline">knooppunt@uwcmaastricht.nl</a>
+      </p>
+      <p class="text-gray-600">&copy; 2025&nbsp;Knooppunt Community Center</p>
+    </div>
+  </footer>
+
+  <!-- ░░░  SMALL JS  ░░░ -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* simple mobile drawer */
+    document.getElementById('mobile-toggle')
+      .addEventListener('click', () =>
+        document.getElementById('mobile-menu').classList.toggle('hidden'));
+  </script>
+</body>
+</html>
